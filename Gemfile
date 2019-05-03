@@ -54,6 +54,8 @@ group :development do
   gem 'pry-rails' # use binding.pry
   gem 'pry-byebug' # use step over on binding.pry
   gem 'pry-doc' # extend pry document support
+  gem 'rubocop'
+  gem 'rails_best_practices'
 end
 
 group :test do

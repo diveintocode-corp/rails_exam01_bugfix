@@ -13,11 +13,12 @@ class CommentsController < ApplicationController
   end
 
   private
-    def set_blog
-      @blog = Blog.find(params[:blog_id])
-    end
 
-    def comment_params
-      params.require(:comment).permit(:name, :content, :blog_id)
-    end
+  def set_blog
+    @blog = Blog.find(params[:blog_id])
+  end
+
+  def comment_params
+    params.require(:comment).permit(:name, :content, :blog_id)
+  end
 end
