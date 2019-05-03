@@ -49,6 +49,11 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'better_errors' # render better error page
+  gem 'binding_of_caller' # use irb on better_errors
+  gem 'pry-rails' # use binding.pry
+  gem 'pry-byebug' # use step over on binding.pry
+  gem 'pry-doc' # extend pry document support
 end
 
 group :test do
