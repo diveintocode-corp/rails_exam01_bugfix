@@ -25,8 +25,8 @@ end
 
 # How to Setup
 step1: fork this Repository
-- Press fork button
-https://gyazo.com/1a3a34072564edf92916678fd7ce5740  
+- Press fork button  
+https://gyazo.com/04e45514f4a9cb64a32168a8a5f34cec  
 or
 - command
 `XXX = your_github_user_name`  
