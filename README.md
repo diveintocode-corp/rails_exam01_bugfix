@@ -28,7 +28,7 @@ step1: fork this Repository
 - Press fork button  
 https://gyazo.com/04e45514f4a9cb64a32168a8a5f34cec  
 or
-- command
+- command  
 `XXX = your_github_user_name`  
 `git clone git@github.com:XXX/rails_exam01_bugfix.git`  
 
@@ -56,4 +56,8 @@ step3: push your commits and create PullRequest on Github
 
 * Rails version  
 `2.5.3`
-
+---
+### How to Install Ruby 2.6.3
+`brew upgrade rbenv ruby-build`  
+`rbenv install 2.6.3`  
+`rbenv local 2.6.3`  
