@@ -7,15 +7,21 @@ This application contains some bugs for beginner of RoR.
 When you fix bugs, write comment `Cause` and `Reason` above your code.  
 
 :en  
-`# [Error Cause]　XXX`  
-`# [Fix Reason] XXX`  
+`# ErrorCause:　XXX`  
+`# FixReason: XXX`  
 `your code`  
 
 :jp  
-`# [エラー原因] XXX`  
-`# [修正の意図] XXX`  
+`# エラー原因: XXX`  
+`# 修正の意図: XXX`  
 `your code`  
-
+```ruby
+class Task < ApplicationRecord
+  # ErrorCause: Can't use association @task.labels
+  # FixReason: Fix typo (label --> labels)
+  has_many :labels
+end
+```
 
 # How to Setup
 step1: fork this Repository
@@ -26,13 +32,16 @@ or
 `XXX = your_github_user_name`  
 `git clone git@github.com:XXX/rails_exam01_bugfix.git`  
 
-step2:  
+step2: checkout your branch and run server  
+  
 `git checkout -b bugfix`  
 `bundle install`  
 `rails db:create`  
 `rails db:migrate`  
 `rails db:seed`  
 `rails server`  
+
+step3: push your commits and create PullRequest on Github
 
 # How to push commit to Github
 `git add -A`  
