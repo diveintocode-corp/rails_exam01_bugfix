@@ -2,9 +2,31 @@
 
 This application contains some bugs for beginner of RoR.  
 
+# Requirement
+
+When you fix bugs, write comment `Cause` and `Reason` above your code.  
+
+:en  
+`# [Error Cause]　XXX`  
+`# [Fix Reason] XXX`  
+`your code`  
+
+:jp  
+`# [エラー原因] XXX`  
+`# [修正の意図] XXX`  
+`your code`  
+
+
 # How to Setup
+step1: fork this Repository
+- Press fork button
+https://gyazo.com/1a3a34072564edf92916678fd7ce5740  
+or
+- command
 `XXX = your_github_user_name`  
 `git clone git@github.com:XXX/rails_exam01_bugfix.git`  
+
+step2:  
 `git checkout -b bugfix`  
 `bundle install`  
 `rails db:create`  
