@@ -2,7 +2,7 @@
 
 This application contains some bugs for beginner of RoR. 
 
-# How to Setup（課題実施時に、この項目は必ず実施してください！）
+# How to Setup（課題実施時にこの項目は必ず実施して下さい！）
 step1: fork this Repository
 - Press fork button  
 https://gyazo.com/04e45514f4a9cb64a32168a8a5f34cec  
