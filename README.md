@@ -1,29 +1,8 @@
 # RailsExam:01 Bugfix
 
-This application contains some bugs for beginner of RoR.  
+This application contains some bugs for beginner of RoR. 
 
-# Requirement
-
-When you fix bugs, write comment `Cause` and `Reason` above your code.  
-
-:en  
-`# ErrorCause:　XXX`  
-`# FixReason: XXX`  
-`your code`  
-
-:jp  
-`# エラー原因: XXX`  
-`# 修正の意図: XXX`  
-`your code`  
-```ruby
-class Task < ApplicationRecord
-  # ErrorCause: Can't use association @task.labels
-  # FixReason: Fix typo (label --> labels)
-  has_many :labels
-end
-```
-
-# How to Setup
+# How to Setup（課題実施時に、この項目は必ず実施してください！）
 step1: fork this Repository
 - Press fork button  
 https://gyazo.com/04e45514f4a9cb64a32168a8a5f34cec  
@@ -47,6 +26,28 @@ step3: push your commits and create PullRequest on Github
 `git add -A`  
 `git commit -m "Fix: [write your message]"`  
 `git push origin bugfix`  
+
+
+# Requirement(Option)
+
+When you fix bugs, write comment `Cause` and `Reason` above your code.  
+
+:en  
+`# ErrorCause:　XXX`  
+`# FixReason: XXX`  
+`your code`  
+
+:jp  
+`# エラー原因: XXX`  
+`# 修正の意図: XXX`  
+`your code`  
+```ruby
+class Task < ApplicationRecord
+  # ErrorCause: Can't use association @task.labels
+  # FixReason: Fix typo (label --> labels)
+  has_many :labels
+end
+```
 
 ---
 ### System Versions
