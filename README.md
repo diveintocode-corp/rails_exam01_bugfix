@@ -6,10 +6,6 @@ This application contains some bugs for beginner of RoR.
 step1: fork this Repository
 - Press fork button  
 https://gyazo.com/04e45514f4a9cb64a32168a8a5f34cec  
-or
-- command  
-`XXX = your_github_user_name`  
-`git clone git@github.com:XXX/rails_exam01_bugfix.git`  
 
 step2: checkout your branch and run server  
   
