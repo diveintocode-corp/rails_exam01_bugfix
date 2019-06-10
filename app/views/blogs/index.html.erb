@@ -16,9 +16,11 @@
       <tr>
         <td><%= blog.title %></td>
         <td><%= blog.content %></td>
-        <td><%= link_to 'Show', blog %></td>
+        <td><%= link_to 'Show', blog_path(blog.id) %></td>
         <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <!-- ErrorCause: undefined method `destroy' for nil:NilClass
+        FixReason: XXX -->
+        <td><%= link_to 'Destroy', blog_path(blog.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
