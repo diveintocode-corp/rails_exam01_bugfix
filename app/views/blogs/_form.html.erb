@@ -1,5 +1,6 @@
-<%# ErrorCause: no value taken over
-FixReason: user instance variable %>
+<%# ErrorCause: no value 
+FixReason: user Instance variable %>
+
 <%= form_with(model: @blog, local: true) do |form| %>
   <% if blog.errors.any? %>
     <div id="error_explanation">
