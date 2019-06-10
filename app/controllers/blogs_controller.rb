@@ -1,5 +1,7 @@
 class BlogsController < ApplicationController
-  before_action :set_blog, only: [:show, :edit, :update]
+  # ErrorCause: undefined method `destroy' for nil:NilClass
+  # FixReason: to call set_blog method before destroy
+  before_action :set_blog, only: [:show, :edit, :update, :destroy]
 
   def index
     @blogs = Blog.all
@@ -24,9 +26,7 @@ class BlogsController < ApplicationController
 
   def update
     if @blog.update(blog_params)
-      # ErrorCause: redirect to edit form
-     # FixReason: change the page after redirecting 
-      redirect_to blogs_url, notice: 'Blog was successfully updated.'
+      redirect_to @blog, notice: 'Blog was successfully updated.'
     else
       render :edit
     end
