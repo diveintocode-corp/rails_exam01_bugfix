@@ -15,7 +15,9 @@
 
   <p>
     <strong>Comment:</strong>
-    <%= @blog.comments.count.to_i + "comments" %>
+    <%# ErrorCause: String can't be coerced into Integer
+    FixReason: to change integer to string %>
+    <%= @blog.comments.count.to_s + "comments" %>
   </p>
 
   <p>
@@ -27,5 +29,5 @@
   <%= render 'comments/form', blog: @blog %>
 </p>
 
-<%= link_to 'Edit', '/blogs/#{blog.id}/edit' %> |
+<%= link_to 'Edit', '/blogs/#{blog.id}/edit' %>
 <%= link_to 'Back', blogs_path %>
