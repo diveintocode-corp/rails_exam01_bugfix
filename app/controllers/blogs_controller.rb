@@ -42,6 +42,8 @@ class BlogsController < ApplicationController
   end
 
   def blog_params
-    params.require(:blog).permit(:title)
+    # ErrorCause: Unpermitted parameter: :content, on the view erromessage is like this Content can't be blank
+    # FixReason: strong parameter rejects content, Add content
+    params.require(:blog).permit(:title, :content)
   end
 end
