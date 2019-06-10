@@ -1,0 +1,8 @@
+<!-- ErrorCause: BlogsController#new is missing a template for this request format and variant.
+FixReason: format name is incorrect, Fix typo (_new.html.erb -> new.html.erb) -->
+
+<h1>New Blog</h1>
+
+<%= render 'form', blog: @blog %>
+
+<%= link_to 'Back', blogs_path %>
