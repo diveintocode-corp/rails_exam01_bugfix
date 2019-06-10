@@ -9,7 +9,9 @@ class CommentsController < ApplicationController
   def destroy
     @comment = @blog.comments.find(params[:id])
     @comment.destroy
-    redirect_to
+    # ErrorCause: ActionController::RoutingError (No route matches [GET] "/blogs/14/comments/2"):
+    # FixReason: fix (redirect_to --> redirect_to @blog)
+    redirect_to blog_path(@blog)
   end
 
   private
