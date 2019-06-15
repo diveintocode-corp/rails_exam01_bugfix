@@ -58,3 +58,21 @@ end
 `brew upgrade rbenv ruby-build`  
 `rbenv install 2.6.3`  
 `rbenv local 2.6.3`  
+---
+### Appendix（付録）
+下記のGemを導入しています。
+1. デバッグ用:5gems
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'pry-doc'
+  
+2. コード解析用:2gems  
+  gem 'rubocop'
+  gem 'rails_best_practices'
+
+.rubocop.ymlも設定済みです。
+こちらの詳細は直接説明致します。
+
+また、Siderなどの解析ツールと連携させるのも良いかもしれません。
