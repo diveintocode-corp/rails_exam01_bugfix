@@ -53,11 +53,13 @@ end
 
 * Rails version  
 `2.5.3`
+
 ---
 ### How to Install Ruby 2.6.3
 `brew upgrade rbenv ruby-build`  
 `rbenv install 2.6.3`  
 `rbenv local 2.6.3`  
+
 ---
 ### Appendix（付録）
 下記のGemを導入しています。
