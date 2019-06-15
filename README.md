@@ -64,17 +64,20 @@ end
 ### Appendix（付録）
 下記のGemを導入しています。
 1. デバッグ用:5gems
-  gem 'better_errors'
-  gem 'binding_of_caller'
-  gem 'pry-rails'
-  gem 'pry-byebug'
-  gem 'pry-doc'
+```
+gem 'better_errors'
+gem 'binding_of_caller'
+gem 'pry-rails'
+gem 'pry-byebug'
+gem 'pry-doc'
+```
   
-2. コード解析用:2gems  
-  gem 'rubocop'
-  gem 'rails_best_practices'
-
-.rubocop.ymlも設定済みです。
+2. コード解析用:2gems
+```
+gem 'rubocop'
+gem 'rails_best_practices'
+```
+`.rubocop.yml` も設定済みです。
 こちらの詳細は直接説明致します。
 
 また、Siderなどの解析ツールと連携させるのも良いかもしれません。
