@@ -69,7 +69,7 @@ gem 'better_errors'
 gem 'binding_of_caller'
 gem 'pry-rails'
 gem 'pry-byebug'
-gem 'pry-doc'
+gem 'pry-doc' https://qiita.com/joker1007/items/42f00b12c65bbec0e50a
 ```
   
 2. コード解析用:2gems
