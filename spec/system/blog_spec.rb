@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Blog', type: :system do
-  let(:blog) { FactoryBot.create(:blog) }
+  let(:blog) { create(:blog) }
 
   describe 'Blog一覧' do
     context '正常系' do
