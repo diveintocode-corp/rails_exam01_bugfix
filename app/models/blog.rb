@@ -1,5 +1,5 @@
 class Blog < ApplicationRecord
-  has_many :comment
+  has_many :comments
 
   validates :title, presence: true
   validates :content, presence: true

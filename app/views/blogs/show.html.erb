@@ -10,7 +10,7 @@
   <%= @blog.content %>
 </p>
 
-<% unless @blog.comments.count.zero? %>
+<% unless @blog.comments.count == 0 %>
   <hr>
 
   <p>
