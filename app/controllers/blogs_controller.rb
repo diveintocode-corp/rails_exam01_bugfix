@@ -1,17 +1,19 @@
 class BlogsController < ApplicationController
-  before_action :set_blog, only: [:show, :edit, :update]
+  before_action :set_blog, only: [:show, :edit, :update, :destroy]
 
   def index
     @blogs = Blog.all
   end
 
-  def show; end
+  def show;
+  end
 
   def new
     @blog = Blog.new
   end
 
-  def edit; end
+  def edit;
+  end
 
   def create
     @blog = Blog.new(blog_params)
@@ -31,8 +33,11 @@ class BlogsController < ApplicationController
   end
 
   def destroy
-    @blog.destroy
-    redirect_to blogs_path, notice: 'Blog was successfully destroyed.'
+    if @blog.destroy
+      redirect_to blogs_path, notice: 'Blog was successfully destroyed.'
+    else
+      render blogs_path
+    end
   end
 
   private
