@@ -28,6 +28,7 @@ group :development do
   gem 'pry-byebug' # use step over on binding.pry
   gem 'pry-doc' # extend pry document support
   gem 'rubocop'
+  gem 'rubocop-rails'
   gem 'rails_best_practices'
 end
 
