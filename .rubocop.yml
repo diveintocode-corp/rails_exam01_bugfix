@@ -38,7 +38,7 @@ Layout/EmptyLinesAroundClassBody:
 Layout/ExtraSpacing:
   Enabled: false
 
-Layout/IndentFirstHashElement:
+Layout/FirstHashElementIndentation:
   Enabled: false
 
 Layout/SpaceInsideHashLiteralBraces:
