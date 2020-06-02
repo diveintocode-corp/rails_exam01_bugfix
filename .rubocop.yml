@@ -1,3 +1,4 @@
+require: rubocop-rails
 AllCops:
   TargetRubyVersion: 2.6
   Exclude:
@@ -11,6 +12,7 @@ AllCops:
     - features/**/*
     - spec/**/*
 
+# バージョン0.72以降は使えないので注意
 Rails:
   Enabled: true
 
