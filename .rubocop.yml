@@ -62,9 +62,6 @@ FormatString:
 NumericLiterals:
   Enabled: false
 
-Style/BracesAroundHashParameters:
-  Enabled: false
-
 Style/AndOr:
   Enabled: false
 
