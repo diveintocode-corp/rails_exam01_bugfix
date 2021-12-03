@@ -10,16 +10,16 @@
   <%= @blog.content %>
 </p>
 
-<% unless @blog.comments.count.zero? %>
+<% unless @blog.comment.count.zero? %>
   <hr>
 
   <p>
     <strong>Comment:</strong>
-    <%= @blog.comments.count.to_i + "comments" %>
+    <%= "#{@blog.comment.count.to_i}comment" %>
   </p>
 
   <p>
-    <%= render @blog.comments %>
+    <%= render @blog.comment %>
   </p>
 <% end %>
 

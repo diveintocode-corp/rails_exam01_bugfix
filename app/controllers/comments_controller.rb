@@ -2,12 +2,12 @@ class CommentsController < ApplicationController
   before_action :set_blog, only: [:create, :destroy]
 
   def create
-    @comment = @blog.comments.create(comment_params)
+    @comment = @blog.comment.create(comment_params)
     redirect_to blog_path(@blog)
   end
 
   def destroy
-    @comment = @blog.comments.find(params[:id])
+    @comment = @blog.comment.find(params[:id])
     @comment.destroy
     redirect_to
   end
