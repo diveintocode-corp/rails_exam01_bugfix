@@ -15,7 +15,7 @@
 
   <p>
     <strong>Comment:</strong>
-    <%= @blog.comments.count.to_i + "comments" %>
+    <%= "#{@blog.comments.count.to_i}comments" %>
   </p>
 
   <p>
@@ -27,5 +27,5 @@
   <%= render 'comments/form', blog: @blog %>
 </p>
 
-<%= link_to 'Edit', '/blogs/#{blog.id}/edit' %> |
+<%= link_to 'Edit', edit_blog_path(@blog) %> |
 <%= link_to 'Back', blogs_path %>
