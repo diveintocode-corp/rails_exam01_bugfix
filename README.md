@@ -176,6 +176,20 @@ fixcode: <%= link_to 'Edit', edit_blog_path(@blog) %>
 
 11. render form is not displayed to the edit screen 
 
+cause: syntax error <% render 'form', blog: @blog %>
+
+reason: this error happens because we rendered form in wrong way.
+fixcode: <%= render 'form', blog: @blog %>
+
+12. we called model in view
+
+cause: <%= form_with(model: Blog.new, local: true) do |form| %>
+
+reason: ruby is MVC. so that view is not responsible to call model. Only controller interact with model and views.
+
+fixcode: <%= form_with(model: blog, local: true) do |form| %>
+
+
 
 
 
