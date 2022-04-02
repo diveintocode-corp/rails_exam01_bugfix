@@ -52,7 +52,7 @@ end
 `2.6.3`
 
 * Rails version  
-`2.5.3`
+`5.2.3`
 
 ---
 ### How to Install Ruby 2.6.3
