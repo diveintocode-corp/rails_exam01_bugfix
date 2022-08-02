@@ -19,7 +19,7 @@ step2: checkout your branch and run server
 step3: push your commits and create PullRequest on Github
 
 # How to push commit to Github
-`git add -A`  
+`git add .`  
 `git commit -m "Fix: [write your message]"`  
 `git push origin bugfix`  
 
