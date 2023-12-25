@@ -19,7 +19,7 @@ step2: checkout your branch and run server
 step3: push your commits and create PullRequest on Github
 
 # How to push commit to Github
-`git add -A`  
+`git add .`  
 `git commit -m "Fix: [write your message]"`  
 `git push origin bugfix`  
 
@@ -49,16 +49,16 @@ end
 ### System Versions
 
 * Ruby version  
-`2.6.3`
+`3.0.1`
 
 * Rails version  
-`2.5.3`
+`6.1`
 
 ---
-### How to Install Ruby 2.6.3
+### How to Install Ruby 3.0.1
 `brew upgrade rbenv ruby-build`  
-`rbenv install 2.6.3`  
-`rbenv local 2.6.3`  
+`rbenv install 3.0.1`  
+`rbenv local 3.0.1`  
 
 ---
 ### Appendix（付録）
