@@ -49,16 +49,16 @@ end
 ### System Versions
 
 * Ruby version  
-`3.0.1`
+`3.3.0`
 
 * Rails version  
-`6.1`
+`6.1.7.7`
 
 ---
-### How to Install Ruby 3.0.1
+### How to Install Ruby 3.3.0
 `brew upgrade rbenv ruby-build`  
-`rbenv install 3.0.1`  
-`rbenv local 3.0.1`  
+`rbenv install 3.3.0`  
+`rbenv local 3.3.0`  
 
 ---
 ### Appendix（付録）
@@ -67,7 +67,6 @@ end
 ```
 gem 'better_errors'
 gem 'binding_of_caller'
-gem 'pry-rails'
 gem 'pry-byebug'
 gem 'pry-doc' https://qiita.com/joker1007/items/42f00b12c65bbec0e50a
 ```
@@ -80,4 +79,3 @@ gem 'rails_best_practices'
 `.rubocop.yml` も設定済みです。
 こちらの詳細は直接説明致します。
 
-また、Siderなどの解析ツールと連携させるのも良いかもしれません。
