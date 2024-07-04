@@ -17,6 +17,7 @@ module Exam01:Bugfix
       g.helper false
       g.jbuilder false
       g.test_framework false
+      g.factory_bot true
     end
   end
 end
