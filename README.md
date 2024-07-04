@@ -9,19 +9,11 @@ https://gyazo.com/04e45514f4a9cb64a32168a8a5f34cec
 
 step2: checkout your branch and run server  
   
-`git checkout -b bugfix`  
 `bundle install`  
 `rails db:create`  
 `rails db:migrate`  
 `rails db:seed`  
 `rails server`  
-
-step3: push your commits and create PullRequest on Github
-
-# How to push commit to Github
-`git add .`  
-`git commit -m "Fix: [write your message]"`  
-`git push origin bugfix`  
 
 
 # Requirement(Option)
