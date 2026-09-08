@@ -1,6 +1,6 @@
-require: rubocop-rails
+plugins: rubocop-rails
 AllCops:
-  TargetRubyVersion: 3.3
+  TargetRubyVersion: 4.0
   Exclude:
     - bin/*
     - db/schema.rb
@@ -22,7 +22,7 @@ Style/Documentation:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
-LineLength:
+Layout/LineLength:
   Enabled: false
 
 Style/AsciiComments:
@@ -58,10 +58,10 @@ Metrics/ModuleLength:
 Metrics/AbcSize:
   Max: 40
 
-FormatString:
+Style/FormatString:
   EnforcedStyle: percent
 
-NumericLiterals:
+Style/NumericLiterals:
   Enabled: false
 
 Style/AndOr:
@@ -79,5 +79,5 @@ Style/RedundantReturn:
 Style/TernaryParentheses:
   Enabled: false
 
-DotPosition:
+Layout/DotPosition:
   EnforcedStyle: trailing

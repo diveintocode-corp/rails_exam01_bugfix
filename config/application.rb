@@ -8,6 +8,7 @@ Bundler.require(*Rails.groups)
 
 module Exam01:Bugfix
   class Application < Rails::Application
+    # Preserve the exercise's existing behavior while running on Rails 8.1.
     config.load_defaults 5.2
     config.time_zone = 'Tokyo'
     config.active_record.default_timezone = :local
